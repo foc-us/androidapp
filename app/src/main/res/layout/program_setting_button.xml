@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:clickable="false"
+              android:focusable="false"
+              android:duplicateParentState="true"
+    >
+
+    <TextView
+        android:id="@+id/ps_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/ps_dark_segment_bg"
+        android:paddingTop="@dimen/min_padding"
+        android:paddingLeft="@dimen/padding_horizontal"
+        android:paddingBottom="@dimen/min_padding"
+        android:paddingRight="@dimen/padding_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/min_text"
+        android:clickable="false"
+        android:focusable="false"
+        android:duplicateParentState="true"
+        tools:text="Mode"
+        />
+
+    <TextView
+        android:id="@+id/ps_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/ps_light_segment_bg"
+        android:gravity="center"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/ps_default"
+        android:textSize="@dimen/min_text"
+        android:clickable="false"
+        android:focusable="false"
+        android:duplicateParentState="true"
+        tools:text="RNS"
+        />
+
+</LinearLayout>

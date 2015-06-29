@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">foc.us + tap</string>
+    <string name="program_name">Program Name</string>
+    <string name="creator_label">Creator: %s</string>
+
+    <string name="program_bg_desc">Background picture for program</string>
+
+    <!-- Settings labels -->
+    <string name="settings_mode">MODE</string>
+    <string name="settings_current">CURRENT</string>
+    <string name="settings_time">TIME</string>
+    <string name="settings_frequency">FREQUENCY</string>
+    <string name="settings_offset">OFFSET</string>
+    <string name="settings_duty_cycle">DUTY CYCLE</string>
+    <string name="settings_random_freq">R. FREQ</string>
+    <string name="settings_min_freq">MIN FREQ</string>
+    <string name="settings_random_current">R. CURRENT</string>
+    <string name="settings_max_freq">MAX FREQ.</string>
+    <string name="settings_bipolar">BIPOLAR</string>
+    <string name="settings_sham">SHAM</string>
+    <string name="settings_sham_period">SHAM PERIOD</string>
+    <string name="settings_voltage">VOLTAGE</string>
+
+    <string name="boolean_on">ON</string>
+    <string name="boolean_off">OFF</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Program data -->
+    <!-- TODO: Actual data required from an API - to be implemented -->
+    <string name="program_title_gamer">Gamer</string>
+    <string name="program_creator_gamer">Creator: ???</string>
+    <string name="program_desc_gamer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis pharetra ex vel congue. Cras semper ex vitae sapien eleifend gravida.</string>
+    <string name="program_title_enduro">Enduro</string>
+    <string name="program_creator_enduro">Creator: ???</string>
+    <string name="program_desc_enduro">Aenean ligula mi, luctus sed ipsum quis, consectetur semper sem. Nullam quis vulputate ligula. Cras ut eros placerat, tempor nulla sed, luctus nulla.\n\nMauris metus risus, fringilla nec iaculis non, eleifend at quam. Fusce finibus sem vel facilisis pellentesque.</string>
+    <string name="program_title_wave">Wave</string>
+    <string name="program_creator_wave">Creator: ???</string>
+    <string name="program_desc_wave">Vivamus sed pharetra mauris. Morbi tristique vel libero non accumsan. In non pharetra lacus. Aliquam erat volutpat.\n\nVivamus pharetra, nisl at blandit finibus, quam elit mattis sem, nec dapibus nibh orci ut sapien. Aliquam blandit est mi, nec dignissim ligula elementum sit amet.</string>
+    <string name="program_title_pulse">Pulse</string>
+    <string name="program_creator_pulse">Creator: ???</string>
+    <string name="program_desc_pulse">Praesent feugiat tellus molestie leo molestie posuere. Donec dapibus mollis nisi, eu auctor augue accumsan vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="program_title_noise">Noise</string>
+    <string name="program_creator_noise">Creator: ???</string>
+    <string name="program_desc_noise">Praesent non elit sem. Phasellus fermentum vel urna sed aliquam. Integer porta purus at molestie lacinia. Aliquam at felis in nulla volutpat ultrices.\n\n Nulla dapibus quam et odio fringilla, ac volutpat turpis dapibus. Nulla facilisi.</string>
+    <string name="discard">Discard</string>
+    <string name="save">Save</string>
+    <string name="unknown_device">Unknown Device</string>
+    <string name="scanning">Scanning&#8230;</string>
+    <string name="devices">Devices</string>
+    <string name="no_devices">No Devices Found</string>
+
+    <string name="dialog_title_duration">Duration</string>
+    <string name="dialog_title_sham_duration">Sham Duration</string>
+    <string name="duration_mins_label">Mins</string>
+    <string name="duration_secs_label">Secs</string>
+    <string name="status_restarting">Restarting&#8230;</string>
+    <string name="empty_string" />
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="invalid_device_firmware">"This app requires your device's Firmware version to be 1.9 or higher.  Please update using the foc.us+ connect windows or ox s application."</string>
+    <string name="ok_button_label">OK</string>
+    <string name="invalid_firmware_message_title">Invalid Device</string>
+
+    <!--<string name="sdk_connection_problem_message_title">Unsupported Android Version</string>-->
+    <!--<string name="sdk_connection_problem_message_prompt">There are Bluetooth connection issues with Android 5.0.  In order to use this app please upgrade to 5.1 if possible.</string>-->
+
+    <string name="mode_dcs">tDCS</string>
+    <string name="mode_acs">tACS</string>
+    <string name="mode_rns">tRNS</string>
+    <string name="mode_pcs">tPCS</string>
+    <string name="no_scan_results">No devices found - please ensure your device has Bluetooth switched on under Settings.</string>
+    <string name="play_failed">Play Error</string>
+    <string name="status_error">Status Error: %d</string>
+
+    <string name="read_program_attributes">Syncing %s</string>
+    <string name="scan_error_title">Scan Error!</string>
+    <string name="scan_error_already_started">Scan already started</string>
+    <string name="scan_error_feature_unsupported">Fails to start power optimized scan as this feature is not supported</string>
+    <string name="scan_error_registration_failed">Fails to start scan as app cannot be registered.</string>
+    <string name="scan_error_internal_error">Bluetooth Scanner internal error</string>
+    <string name="scan_error_unknown">Unknown scanning error</string>
+    <string name="scan_error_guidance">\n\nThe Bluetooth chip on you device does not appear to support Bluetooth Low Energy.</string>
+
+</resources>

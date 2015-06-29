@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Play control -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/play_control"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/control_bar_bg"
+                android:clickable="false"
+                android:focusable="false"
+                tools:showIn="@layout/fragment_program"
+    >
+
+    <com.beardedhen.androidbootstrap.FontAwesomeText
+        android:id="@+id/play_button"
+        style="@style/control_bar_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:layout_centerVertical="true"
+        bootstrap:fa_icon="fa-play"
+        android:enabled="false"
+        />
+
+    <com.beardedhen.androidbootstrap.FontAwesomeText
+        android:id="@+id/repeat_button"
+        style="@style/control_bar_icon"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/play_button"
+        bootstrap:fa_icon="fa-repeat"
+        android:enabled="false"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/btn_bluetooth"
+        android:src="@drawable/bluetooth_disconntected_icon"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/repeat_button"
+        android:layout_centerVertical="true"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="32dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/current_duration_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btn_bluetooth"
+        android:gravity="center"
+        android:paddingRight="32dp"
+        android:textColor="@color/text_default"
+        android:textSize="@dimen/medium_text"
+        />
+
+    <com.beardedhen.androidbootstrap.FontAwesomeText
+        android:id="@+id/settings_button"
+        style="@style/control_bar_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        bootstrap:fa_icon="fa-cog"
+        android:layout_marginRight="4dp"
+        tools:ignore="SpUsage"
+        />
+
+</RelativeLayout>

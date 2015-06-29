@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/dialog_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/dialog_title"
+        android:text="Current (mA)"
+        />
+
+    <TextView
+        android:id="@+id/seek_value"
+        style="@style/dialog_seek_value"
+        android:layout_below="@+id/dialog_title"
+        android:layout_centerHorizontal="true"
+        android:text="20"
+        />
+
+    <SeekBar
+        android:id="@+id/seek_bar_minutes"
+        style="@style/dialog_seeker"
+        android:layout_below="@+id/seek_value"
+        android:layout_marginBottom="@dimen/seekbar_bot_padding"
+        android:max="20"
+        />
+
+    <Button
+        android:id="@+id/btn_discard"
+        style="@style/dialog_button"
+        android:layout_below="@+id/seek_bar_minutes"
+        android:layout_toStartOf="@+id/btn_save"
+        android:text="@string/discard"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/dialog_button"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/seek_bar_minutes"
+        android:text="@string/save"
+        />
+
+</RelativeLayout>

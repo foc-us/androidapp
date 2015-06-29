@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/dialog_title"
+        android:text="@string/devices"
+        />
+
+    <ListView
+        android:id="@+id/scan_results_list"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/dialog_title"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/min_padding"
+        android:layout_marginBottom="@dimen/min_padding"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        />
+
+    <TextView
+        android:id="@+id/no_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_scan_results"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:singleLine="false"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/dialog_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cancel"
+        android:layout_below="@+id/scan_results_list"
+        />
+
+</RelativeLayout>

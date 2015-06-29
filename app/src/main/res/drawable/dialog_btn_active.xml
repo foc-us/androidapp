@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/transparent" />
+    <item
+        android:bottom="@dimen/dialog_drawable_padding"
+        android:drawable="@drawable/dialog_btn_pressed_bg"
+        android:left="@dimen/dialog_drawable_padding"
+        android:right="@dimen/dialog_drawable_padding"
+        android:top="@dimen/dialog_drawable_padding"
+        />
+</layer-list>

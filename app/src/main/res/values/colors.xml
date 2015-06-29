@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="icon_white">#ffffff</color>
+    <color name="icon_active">#ddd3d3d3</color>
+    <color name="icon_disabled">#A0A0A0</color>
+
+    <color name="control_bar_bg">#aa235d76</color>
+
+    <color name="button_bg">#77404040</color>
+    <color name="desc_bg">#77404040</color>
+    <color name="text_button_disabled">#ff707070</color>
+    <color name="text_button">@color/icon_white</color>
+
+    <color name="text_default">#B6B6B6</color>
+    <color name="text_program_name">@color/icon_white</color>
+    <color name="ps_default">#212121</color>
+
+    <color name="ps_btn_light_default">#CCFFFFFF</color>
+    <color name="ps_btn_light_active">#EEFFFFFF</color>
+    <color name="ps_btn_dark_default">#CC404040</color>
+    <color name="ps_btn_dark_active">#EE404040</color>
+
+</resources>

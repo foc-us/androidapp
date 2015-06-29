@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/dialog_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/dialog_title"
+        android:text="@string/dialog_title_duration"
+        />
+
+    <TextView
+        android:id="@+id/seek_value"
+        style="@style/dialog_seek_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title"
+        android:layout_centerHorizontal="true"
+        tools:text="05:30"
+        />
+
+    <TextView
+        android:id="@+id/lbl_minutes"
+        style="@style/dialog_seekbar_label"
+        android:layout_alignBottom="@+id/seek_bar_minutes"
+        android:layout_alignTop="@+id/seek_bar_minutes"
+        android:layout_below="@+id/seek_value"
+        android:text="@string/duration_mins_label"
+        />
+
+    <SeekBar
+        android:id="@+id/seek_bar_minutes"
+        style="@style/dialog_seeker"
+        android:layout_below="@+id/seek_value"
+        android:layout_marginBottom="@dimen/default_android_padding"
+        android:layout_toEndOf="@+id/lbl_minutes"
+        android:max="20"
+        />
+
+    <TextView
+        android:id="@+id/lbl_seconds"
+        style="@style/dialog_seekbar_label"
+        android:layout_alignBottom="@+id/seek_bar_seconds"
+        android:layout_alignTop="@+id/seek_bar_seconds"
+        android:layout_below="@+id/seek_value"
+        android:text="@string/duration_secs_label"
+        />
+
+    <SeekBar
+        android:id="@+id/seek_bar_seconds"
+        style="@style/dialog_seeker"
+        android:layout_below="@+id/seek_bar_minutes"
+        android:layout_marginBottom="@dimen/seekbar_bot_padding"
+        android:layout_toEndOf="@+id/lbl_seconds"
+        android:max="20"
+        />
+
+    <Button
+        android:id="@+id/btn_discard"
+        style="@style/dialog_button"
+        android:layout_below="@+id/seek_bar_seconds"
+        android:layout_toStartOf="@+id/btn_save"
+        android:text="@string/discard"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/dialog_button"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/seek_bar_seconds"
+        android:text="@string/save"
+        />
+
+</RelativeLayout>

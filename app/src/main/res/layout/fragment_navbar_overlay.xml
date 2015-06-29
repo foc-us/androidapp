@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/program_navbar_height"
+                tools:context=".MainActivity"
+    >
+
+    <us.foc.transcranial.dcs.ui.view.NavButtonView
+        android:id="@+id/previous_program_button"
+        style="@style/program_nav_icon"
+        android:layout_width="@dimen/program_navbar_height"
+        android:layout_height="@dimen/program_navbar_height"
+        android:layout_alignParentLeft="true"
+        android:rotation="180"
+        android:visibility="gone"
+        />
+
+    <us.foc.transcranial.dcs.ui.view.NavButtonView
+        android:id="@+id/next_program_button"
+        style="@style/program_nav_icon"
+        android:layout_width="@dimen/program_navbar_height"
+        android:layout_height="@dimen/program_navbar_height"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

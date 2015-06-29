@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/dialog_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/dialog_title"
+        android:text="Mode"
+        android:textColor="@color/primary_text"
+        />
+
+    <TextView
+        android:id="@+id/mode_value"
+        style="@style/dialog_seek_value"
+        android:layout_below="@+id/dialog_title"
+        android:layout_centerHorizontal="true"
+        android:text="tDCS"
+        />
+
+    <LinearLayout
+        android:id="@+id/radio_container_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mode_value"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/direct_mode"
+            style="@style/dialog_radio_option"
+            android:text="Direct"
+            />
+
+        <RadioButton
+            android:id="@+id/alternating_mode"
+            style="@style/dialog_radio_option"
+            android:text="Alternating"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/radio_container_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_container_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/default_android_padding"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/random_mode"
+            style="@style/dialog_radio_option"
+            android:text="Random"
+            />
+
+        <RadioButton
+            android:id="@+id/pulse_mode"
+            style="@style/dialog_radio_option"
+            android:text="Pulse"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_discard"
+        style="@style/dialog_button"
+        android:layout_below="@+id/radio_container_bottom"
+        android:layout_toStartOf="@+id/btn_save"
+        android:text="@string/discard"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/dialog_button"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/radio_container_bottom"
+        android:text="@string/save"
+        />
+
+</RelativeLayout>

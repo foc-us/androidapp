@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/program_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/program_bg_desc"
+        android:src="@drawable/program_bg"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        />
+
+    <TextView
+        android:id="@+id/program_name"
+        style="@style/heading_text"
+        android:layout_height="@dimen/program_navbar_height"
+        tools:text="@string/program_name"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/program_name"
+        android:background="@android:color/transparent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        >
+
+        <!-- Content -->
+
+        <RelativeLayout
+            android:id="@+id/program_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/play_control"
+            android:layout_marginBottom="@dimen/min_padding"
+            >
+
+            <TextView
+                android:id="@+id/program_creator"
+                tools:text="Creator Name"
+                android:textSize="@dimen/min_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:padding="@dimen/min_padding"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/program_description"
+                android:layout_below="@+id/program_creator"
+                android:layout_marginBottom="@dimen/min_padding"
+                android:layout_marginTop="@dimen/min_padding"
+                android:padding="@dimen/min_padding"
+                tools:text="Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore..."
+                android:textSize="@dimen/medium_text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <us.foc.transcranial.dcs.ui.view.SettingEditorView
+                android:id="@+id/settings_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/min_padding"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/play_control" />
+    </RelativeLayout>
+
+</RelativeLayout>

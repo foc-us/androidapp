@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Focus</string>
+    <string name="start_program">@string/take_charge</string>
+    <string name="request_state">&#8230;</string>
+    <string name="connecting_state">Connecting&#8230;</string>
+    <string name="stop_program">Stop</string>
+    <string name="take_charge">Take Charge</string>
+    <string name="connection_failed">Connection Failed</string>
+    <string name="connect_to_phone">Connect</string>
+    <string name="request_failed">Request failed</string>
+    <string name="voice_prompt">Focus Command</string>
+</resources>
